@@ -15,12 +15,12 @@ Each package must have its own composer.json file similar to the example below. 
 
 ```
 {
-	"name": "microphork/package-auth",
-	"description": "An authentication package for the microphork framework",
-	"type": "microphork-package",
-	"require": {
-		"microphork/installer": "*"
-	}
+    "name": "microphork/package-auth",
+    "description": "An authentication package for the microphork framework",
+    "type": "microphork-package",
+    "require": {
+        "microphork/installer": "*"
+    }
 }
 ```
 

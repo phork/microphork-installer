@@ -1,14 +1,14 @@
 {
-	"name": "microphork/package-installer",
-	"type": "composer-installer",
-	"license": "MIT",
-	"autoload": {
-		"psr-0": {"Phork\\Composer\\": "src/"}
-	},
-	"extra": {
-		"class": "Phork\\Composer\\Installer",
-		"branch-alias": {
-			"dev-master": "0.1-dev"
-		}
-	}
+    "name": "microphork/package-installer",
+    "type": "composer-installer",
+    "license": "MIT",
+    "autoload": {
+        "psr-0": {"Phork\\Composer\\": "src/"}
+    },
+    "extra": {
+        "class": "Phork\\Composer\\Installer",
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
 }
