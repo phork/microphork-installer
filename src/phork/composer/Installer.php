@@ -4,7 +4,6 @@ namespace Phork\Composer;
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 
-//this cannot have a space in front of it or InstallerInstaller::registerInstaller will fail
 class Installer extends LibraryInstaller 
 {
     /**
