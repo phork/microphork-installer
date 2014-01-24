@@ -1,6 +1,6 @@
 {
     "name": "microphork/package-installer",
-    "type": "composer-installer",
+    "type": "composer-plugin",
     "license": "MIT",
     "autoload": {
         "psr-0": {"Phork\\Composer\\": "src/"}
