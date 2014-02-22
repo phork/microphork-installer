@@ -18,7 +18,7 @@ class Installer extends LibraryInstaller
         }
     
         $this->initializeVendorDir();
-        return ($this->vendorDir ? $this->vendorDir.'/' : '').'microphork/packages/'.$name;
+        return ($this->vendorDir ? $this->vendorDir.'/' : '').'microphork/packages/'.ucfirst($name);
     }
 
     
