@@ -4,12 +4,12 @@ namespace Phork\Composer;
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 
-class Installer extends LibraryInstaller 
+class Installer extends LibraryInstaller
 {
     /**
      * {@inheritDoc}
      */
-    protected function getPackageBasePath(PackageInterface $package) 
+    protected function getPackageBasePath(PackageInterface $package)
     {
         if (preg_match('|microphork/package-([-\w]+)|', $package->getPrettyName(), $matches)) {
             $name = $matches[1];
@@ -25,7 +25,7 @@ class Installer extends LibraryInstaller
     /**
      * {@inheritDoc}
      */
-    public function supports($packageType) 
+    public function supports($packageType)
     {
         return $packageType === 'microphork-package';
     }
