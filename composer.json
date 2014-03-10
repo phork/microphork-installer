@@ -1,5 +1,6 @@
 {
     "name": "microphork/package-installer",
+    "description": "The package installer for the microphork framework.",
     "type": "composer-plugin",
     "license": "MIT",
     "autoload": {
