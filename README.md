@@ -1,9 +1,3 @@
-#microphork-installer
-
-* [By Phork Labs](http://phorklabs.com/)
-* Version: 0.1
-
-
 ##Introduction
 
 This is a package installer for the microphork framework. It makes sure that all packages are installed in `vendor/microphork/packages`.
@@ -11,7 +5,7 @@ This is a package installer for the microphork framework. It makes sure that all
 
 ##Usage
 
-Each package must have its own composer.json file similar to the example below. Note that the type is `microphork-package` and that this installer is required.
+Each package must have its own `composer.json` file similar to the example below. Note that the type is `microphork-package` and that this installer is required.
 
 ```
 {
@@ -19,10 +13,20 @@ Each package must have its own composer.json file similar to the example below. 
     "description": "An authentication package for the microphork framework",
     "type": "microphork-package",
     "require": {
-        "microphork/installer": "*"
+        "microphork/package-installer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phork\\Pkg\\Auth\\": "classes"
+        }
     }
 }
 ```
+
+
+##Credits
+
+Built by [Elenor](http://elenor.net) at [Phork Labs](http://phorklabs.com).
 
 
 ##License
