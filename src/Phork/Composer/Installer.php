@@ -21,7 +21,6 @@ class Installer extends LibraryInstaller
         return ($this->vendorDir ? $this->vendorDir.'/' : '').'microphork/packages/'.ucfirst($name);
     }
 
-    
     /**
      * {@inheritDoc}
      */

@@ -7,6 +7,9 @@ use Composer\Plugin\PluginInterface;
 
 class InstallerPlugin implements PluginInterface
 {
+    /**
+     * {@inheritDoc}
+     */
     public function activate(Composer $composer, IOInterface $io)
     {
         $installer = new Installer($io, $composer);
