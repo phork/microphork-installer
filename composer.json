@@ -1,15 +1,27 @@
 {
     "name": "microphork/package-installer",
     "description": "The package installer for the microphork framework",
-    "type": "composer-plugin",
+    "keywords": ["microphork", "phork", "framework"],
     "license": "MIT",
+    "homepage": "http://phork.org",
+    "authors": [
+        {
+            "name": "Elenor Collings",
+            "email": "hello@elenor.net",
+            "homepage": "http://elenor.net",
+            "role": "Developer"
+        }
+    ],
+    "type": "composer-plugin",
     "autoload": {
-        "psr-0": {"Phork\\Composer\\": "src/"}
+        "psr-4": {
+            "Phork\\Composer\\": "php/classes"
+        }
     },
     "extra": {
         "class": "Phork\\Composer\\InstallerPlugin",
         "branch-alias": {
-            "dev-master": "0.1-dev"
+            "dev-master": "1.0.x-dev"
         }
     },
     "require": {
