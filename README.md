@@ -1,9 +1,9 @@
-##Introduction
+## Introduction
 
 This is a package installer for the microphork framework. It makes sure that all packages are installed in `vendor/microphork/packages`.
 
 
-##Usage
+## Usage
 
 Each package must have its own `composer.json` file similar to the example below. Note that the type is `microphork-package` and that this installer is required.
 
@@ -24,12 +24,12 @@ Each package must have its own `composer.json` file similar to the example below
 ```
 
 
-##Credits
+## Credits
 
-Built by [Elenor](http://elenor.net) at [Phork Labs](http://phorklabs.com).
+Built by [Elenor](http://elenor.net) at [Phork Labs](http://phork.org).
 
 
-##License
+## License
 
 Licensed under The MIT License
 <http://www.opensource.org/licenses/mit-license.php>
